@@ -1,66 +1,65 @@
 package boj5622;
-}
-				break;
-				count += 9;
 
-import java.io.IOException;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+
 public class Main {
-
 	public static void main(String[] args) throws IOException {
-		int count = 0;
-		String str = in.readLine();
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String str = in.readLine();
 		int i = 0;
-			case 'H':
-				break;
-				count += 3;
-			case 'F':
-			case 'E':
-
-				break;
+		int count = 0;
 		while (i < str.length()) {
 			switch (str.charAt(i)) {
 			case 'A':
 			case 'B':
-			case 'G':
-			case 'D':
-				count += 2;
 			case 'C':
+				count += 2;
+				break;
 
-	}
-		System.out.println(count+str.length());
-		}
-			i++;
-			}
-			default:
+			case 'D':
+			case 'E':
+			case 'F':
+				count += 3;
 				break;
-			case 'Z':
-			case 'Y':
-			case 'X':
-				break;
-			case 'V':
-			case 'U':
-			case 'T':
-			case 'S':
-			case 'Q':
-			case 'P':
-				break;
-				count += 7;
-			case 'R':
-				count += 8;
-				count += 5;
-			case 'J':
-				count += 4;
+			case 'G':
+			case 'H':
 			case 'I':
+				count += 4;
 				break;
+			case 'J':
 			case 'K':
 			case 'L':
+				count += 5;
 				break;
 			case 'M':
 			case 'N':
 			case 'O':
 				count += 6;
 				break;
+			case 'P':
+			case 'Q':
+			case 'R':
+			case 'S':
+				count += 7;
+				break;
+			case 'T':
+			case 'U':
+			case 'V':
+				count += 8;
+				break;
 			case 'W':
+			case 'X':
+			case 'Y':
+			case 'Z':
+				count += 9;
+				break;
+			default:
+				break;
+			}
+			i++;
+		}
+		System.out.println(count + str.length());
+	}
+}
