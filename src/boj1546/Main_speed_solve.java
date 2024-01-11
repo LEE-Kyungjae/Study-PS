@@ -9,7 +9,6 @@ public class Main_speed_solve {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int n= Integer.parseInt(in.readLine());
 		StringTokenizer st = new StringTokenizer(in.readLine());
-		
 		double max = 0;
 		double[] arr = new double[n];
 		
