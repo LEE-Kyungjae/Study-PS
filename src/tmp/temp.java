@@ -1,13 +1,19 @@
-package tmp;
-
+//boj
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
-public class temp {
-	//Scanner sc = new Scanner(System.in);
-	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-	BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
-	//String line[] = in.readLine().split(" ");
+public class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		StringBuilder sb;
+		int n = Integer.parseInt(in.readLine());
+	}
 }
+
+//in
+in.readLine()
+
+//ip
+Integer.parseInt();
