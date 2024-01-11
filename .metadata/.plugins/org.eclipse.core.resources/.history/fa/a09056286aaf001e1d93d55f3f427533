@@ -1,0 +1,29 @@
+package boj28278;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		int C = 0;// °Å½º¸§µ· cent
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		int N = Integer.parseInt(in.readLine());
+		int q = 25;
+		int d = 10;
+		int n = 5;
+		int p = 1;
+		int arr[] = new int[4];
+		for (int i = 0; i < N; i++) {
+			C = Integer.parseInt(in.readLine());
+
+			arr[0] = C / q;
+			arr[1] = C % q / d;
+			arr[2] = C % q % d / n;
+			arr[3] = C % q % d % n;
+			System.out.println(arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3]);
+		}
+	}
+}
