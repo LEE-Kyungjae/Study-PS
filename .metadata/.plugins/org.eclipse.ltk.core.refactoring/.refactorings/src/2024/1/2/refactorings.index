@@ -1,3 +1,9 @@
 1704846339212	Delete element
 1704865687083	Copy compilation unit
 1704944256327	Rename local variable 'N'
+1705019024678	Delete element
+1705028984878	Rename type 'Main'
+1705033273220	Rename type 'Main_otherSol'
+1705035524413	Rename field 'n'
+1705035527353	Rename field 'm'
+1705035707648	Extract method 'chess'
