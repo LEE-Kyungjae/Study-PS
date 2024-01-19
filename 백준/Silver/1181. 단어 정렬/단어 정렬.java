@@ -7,12 +7,13 @@ import java.util.Comparator;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
 		int N = Integer.parseInt(br.readLine());
 		String[] arr = new String[N];
 		for (int i = 0; i < N; i++) {
 			arr[i] = br.readLine();
 		}
-		//정렬
+		// 정렬
 		Arrays.sort(arr, new Comparator<String>() {
 			@Override
 			public int compare(String o1, String o2) {
@@ -22,15 +23,16 @@ public class Main {
 					return o1.length() - o2.length();
 			}
 		});
-		//중복제거
+		// 중복제거
 		for (int i = 0; i < N; i++) {
 			if (i != 0) {
 				if (arr[i].compareTo(arr[i - 1]) != 0) {
-					System.out.println(arr[i]);
+					sb.append(arr[i]).append("\n");
 				}
 			} else {
-				System.out.println(arr[i]);
+				sb.append(arr[i]).append("\n");
 			}
 		}
+		System.out.println(sb);
 	}
 }
