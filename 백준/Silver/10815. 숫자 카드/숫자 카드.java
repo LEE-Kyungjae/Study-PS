@@ -18,11 +18,7 @@ public class Main {
 		int M2 = Integer.parseInt(br.readLine());
 		st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < M2; i++) {
-			if (set.contains(Integer.parseInt(st.nextToken()))) {
-				sb.append(1).append(" ");
-			} else {
-				sb.append(0).append(" ");
-			}
+			sb.append(set.contains(Integer.parseInt(st.nextToken())) ? 1 : 0).append(" ");
 		}
 		System.out.println(sb);
 	}
