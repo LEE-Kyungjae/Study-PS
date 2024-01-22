@@ -8,36 +8,29 @@ class Solution {
 		int luy = Integer.MAX_VALUE;
 		int rdx = 0;
 		int rdy = 0;
-		char[][] a = new char[50][50];
-		int n = wallpaper.length;
-		int m = wallpaper[0].length();
-		for (int i = 0; i < n; i++) {
-			a[i] = wallpaper[i].toCharArray();
-		}
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (a[i][j] == '#') {
-					if (i < lux) {
-						lux = i;
-					}
-					if (i > rdx) {
-						rdx = i;
-					}
-					if (j < luy) {
-						luy = j;
-					}
-					if (j > rdy) {
-						rdy = j;
-					}
+		for (int i = 0; i < wallpaper.length; i++) {
+			for (int j = 0; j < wallpaper[i].length(); j++) {
+				if (wallpaper[i].charAt(j) == '#') {
+//					if (i < lux) {
+//						lux = i;
+//					}
+//					if (i > rdx) {
+//						rdx = i;
+//					}
+//					if (j < luy) {
+//						luy = j;
+//					}
+//					if (j > rdy) {
+//						rdy = j;
+//					}
+					lux = Math.min(lux, i);
+					luy = Math.min(luy, j);
+					rdx = Math.max(rdx, i);
+					rdy = Math.max(rdy, j);
+
 				}
 			}
 		}
-
-		int[] answer = new int[4];
-		answer[0] = lux;
-		answer[1] = luy;
-		answer[2] = rdx + 1;
-		answer[3] = rdy + 1;
-		return answer;
+		return new int[] { lux, luy, rdx + 1, rdy + 1 };
 	}
 }
