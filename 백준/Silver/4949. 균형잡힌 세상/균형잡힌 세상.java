@@ -21,14 +21,14 @@ public class Main {
 					stack.push(input);
 				} else if (input == ']') {
 					if (stack.empty() || stack.peek() != '[') {
-						System.out.println("no");
+						sb.append("no").append("\n");
 						continue out;
 					} else {
 						stack.pop();
 					}
 				} else if (input == ')') {
 					if (stack.empty() || stack.peek() != '(') {
-						System.out.println("no");
+						sb.append("no").append("\n");
 						continue out;
 					} else {
 						stack.pop();
@@ -37,11 +37,12 @@ public class Main {
 
 			}
 			if (stack.empty()) {
-				System.out.println("yes");
+				sb.append("yes").append("\n");
 			} else {
-				System.out.println("no");
+				sb.append("no").append("\n");
 			}
 		}
+		System.out.println(sb);
 		br.close();
 	}
 }
