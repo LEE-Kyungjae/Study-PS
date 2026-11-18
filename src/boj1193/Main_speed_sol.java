@@ -9,7 +9,7 @@ public class Main_speed_sol {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		Long X = Long.parseLong(in.readLine()) - 1;
 		int n = 0;
-		// ¾ÖÃÊ¿¡ ºĞ¸ğ³ª ºĞÀÚ µÑÁß ÇÏ³ª´Â 1ÀÌ±â¶§¹®¿¡ ºĞ¸ğºĞÀÚ¸¦ °¢°¢ º¯¼öÁöÁ¤ÇÒ ÇÊ¿ä°¡ ¾ø´Ù.
+		// ì• ì´ˆì— ë¶„ëª¨ë‚˜ ë¶„ì ë‘˜ì¤‘ í•˜ë‚˜ëŠ” 1ì´ê¸°ë•Œë¬¸ì— ë¶„ëª¨ë¶„ìë¥¼ ê°ê° ë³€ìˆ˜ì§€ì •í•  í•„ìš”ê°€ ì—†ë‹¤.
 		int index = 0;
 		if (X == 1) {
 			System.out.println("1/1");

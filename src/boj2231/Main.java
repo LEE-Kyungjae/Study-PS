@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		// ÀÚ¿¬¼ö in
+		// ìì—°ìˆ˜ in
 		int N = Integer.parseInt(in.readLine());
-		// ¿ÏÀüÅ½»ö
+		// ì™„ì „íƒìƒ‰
 		for (int i = 0; i < N; i++) {
 			int number = i;
 			Long sum = 0L;
