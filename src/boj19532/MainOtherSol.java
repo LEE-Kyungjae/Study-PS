@@ -14,20 +14,20 @@ public class MainOtherSol {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		br.close();
 
-		// Ã¹¹øÂ° ½Ä
+		// ì²«ë²ˆì§¸ ì‹
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		int c = Integer.parseInt(st.nextToken());
-		// µÎ¹øÂ° ½Ä
+		// ë‘ë²ˆì§¸ ì‹
 		int d = Integer.parseInt(st.nextToken());
 		int e = Integer.parseInt(st.nextToken());
 		int f = Integer.parseInt(st.nextToken());
 
-		// °¢°¢ÀÇ x, y°¡ -999 <= x, y <= 999ÀÌ±â ¶§¹®¿¡
+		// ê°ê°ì˜ x, yê°€ -999 <= x, y <= 999ì´ê¸° ë•Œë¬¸ì—
 		for (int i = -999; i <= 999; i++) {
 			for (int j = -999; j <= 999; j++) {
-				if (a * i + b * j == c) { // ax + by °¡ CÀÌ°í(x = i, y = j)
-					if (d * i + e * j == f) { // dx + ey°¡ fÀÏ ¶§(x = i, y = j)
+				if (a * i + b * j == c) { // ax + by ê°€ Cì´ê³ (x = i, y = j)
+					if (d * i + e * j == f) { // dx + eyê°€ fì¼ ë•Œ(x = i, y = j)
 						bw.write(i + " " + j + "\n");
 						break;
 					}

@@ -15,7 +15,7 @@ public class Main {
 			}
 			String s = "" + i;
 			int stack = 0;
-			// ÇÑ¼ıÀÚ¿¡ ´ëÇØ¼­
+			// í•œìˆ«ìì— ëŒ€í•´ì„œ
 			for (int j = 0; j < Math.log10(i) - 2; j++) {
 				if (s.charAt(j) == '6') {
 					if (s.charAt(j + 1) == '6') {

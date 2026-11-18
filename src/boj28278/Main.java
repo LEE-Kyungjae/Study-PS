@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
-		int C = 0;// °Å½º¸§µ· cent
+		int C = 0;// ê±°ìŠ¤ë¦„ëˆ cent
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb;
 		int N = Integer.parseInt(in.readLine());
