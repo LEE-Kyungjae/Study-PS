@@ -2,24 +2,24 @@ package boj2231;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-//¹İ·Ê Ã£¾Æ¾ßÇÔ
+//ë°˜ë¡€ ì°¾ì•„ì•¼í•¨
 public class Main_err {
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		// ÀÚ¿¬¼ö in
+		// ìì—°ìˆ˜ in
 		String N = in.readLine();
-		// int °ªÀ¸·Î º¯°æ
+		// int ê°’ìœ¼ë¡œ ë³€ê²½
 		int n = Integer.parseInt(N);
 		String s = "";
-		// ¿ÏÀüÅ½»ö
+		// ì™„ì „íƒìƒ‰
 		for (int i = 0; i < n; i++) {
 			Long sum = 0L;
-			// ¸îÀÚ¸®ÀÎÁö ±¸ÇÏ´Â ·ÎÁ÷
+			// ëª‡ìë¦¬ì¸ì§€ êµ¬í•˜ëŠ” ë¡œì§
 			int length = (int) (Math.log10(i) + 1);
 			sum += i;
 			for (int j = 0; j < length; j++) {
 				sum += Integer.toString(i).charAt(j) - '0';
-				// »ı¼ºÀÚ ÆÇ´ÜÁ¶°Ç
+				// ìƒì„±ì íŒë‹¨ì¡°ê±´
 				if (n == sum) {
 					System.out.println(i);
 					return;
